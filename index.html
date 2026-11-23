@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Current Affairs 2026</title>
+<meta name="theme-color" content="#D32F2F">
+
+<!-- LOGO - Red Book SVG -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect width='512' height='512' rx='80' fill='%23D32F2F'/%3E%3Ctext x='256' y='340' font-size='220' text-anchor='middle'%3E📕%3C/text%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect width='512' height='512' rx='80' fill='%23D32F2F'/%3E%3Ctext x='256' y='340' font-size='220' text-anchor='middle'%3E📕%3C/text%3E%3C/svg%3E">
+
+<style>
+body{margin:0;font-family:sans-serif;background:#FFF5F5;text-align:center}
+.header{background:#D32F2F;color:white;padding:25px 10px;border-radius:0 0 25px 25px}
+.header h1{margin:5px 0;font-size:26px}
+.book{font-size:60px}
+.btn{display:block;background:white;color:#D32F2F;margin:15px 20px;padding:18px;border-radius:15px;font-size:18px;font-weight:bold;box-shadow:0 4px 10px #00000020;text-decoration:none}
+.box{background:white;margin:15px 20px;padding:15px;border-radius:15px;text-align:left;display:none}
+/* POWERED BY HIDE - Netlify / Tiiny badge ni dachipettadaniki */
+iframe[src*="netlify"], iframe[src*="tiiny"], div[style*="fixed"][style*="bottom"]{display:none !important; visibility:hidden !important; opacity:0 !important; pointer-events:none !important; height:0 !important;}
+a[href*="netlify.app"], a[href*="tiiny"]{display:none !important;}
+</style>
+
+<script>
+// MANIFEST ni ee file lone create chesthunnam
+const icon = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect width='512' height='512' rx='80' fill='%23D32F2F'/%3E%3Ctext x='256' y='340' font-size='220' text-anchor='middle'%3E📕%3C/text%3E%3C/svg%3E";
+const manifest = {
+  name: "Current Affairs 2026",
+  short_name: "Current Affairs",
+  start_url: ".",
+  display: "standalone",
+  background_color: "#D32F2F",
+  theme_color: "#D32F2F",
+  icons: [{src: icon, sizes: "512x512", type: "image/svg+xml", purpose: "any maskable"}]
+};
+const blob = new Blob([JSON.stringify(manifest)], {type: 'application/json'});
+const link = document.createElement('link');
+link.rel = 'manifest';
+link.href = URL.createObjectURL(blob);
+document.head.appendChild(link);
+</script>
+</head>
+<body>
+
+<div class="header">
+<div class="book">📕</div>
+<h1>Current Affairs 2026</h1>
+<p>Daily CA • Quiz • PDFs</p>
+</div>
+
+<a class="btn" href="#" onclick="show('ca')">📖 Today's Current Affairs</a>
+<a class="btn" href="#" onclick="show('quiz')">📝 Daily Quiz</a>
+<a class="btn" href="#" onclick="show('pdf')">📄 PDFs Notes</a>
+
+<div id="ca" class="box">
+<b>Today's CA - Demo:</b><br><br>
+1. AP lo kottha scheme launch ayyindi.<br>
+2. India GDP growth 7.2%<br>
+3. ISRO kottha satellite launch chesindi.
+</div>
+
+<div id="quiz" class="box">
+<b>Quiz - Demo:</b><br><br>
+Q1. AP capital enti?<br>
+A) Amaravati B) Hyderabad<br><br>
+<button onclick="alert('Correct! Amaravati')">Answer Chudu</button>
+</div>
+
+<div id="pdf" class="box">
+<b>PDFs:</b><br><br>
+Daily PDF ikkada vasthundi.
+</div>
+
+<script>
+function show(id){
+document.querySelectorAll('.box').forEach(b=>b.style.display='none');
+document.getElementById(id).style.display='block';
+}
+
+// POWERED BY HIDE SCRIPT - Prathi 500ms ki check chesi sticker ni theseseyyali
+setInterval(function(){
+  document.querySelectorAll('div, iframe, a, p, span, section').forEach(function(el){
+    try{
+      if(el.innerText && (el.innerText.includes('Powered by') || el.innerText.includes('Made with') || el.innerText.includes('Deployed on'))){
+        el.style.display = 'none';
+        el.style.visibility = 'hidden';
+        el.remove();
+      }
+      if(el.src && (el.src.includes('netlify') || el.src.includes('tiiny'))){
+        el.style.display = 'none';
+        el.remove();
+      }
+    }catch(e){}
+  });
+}, 500);
+</script>
+</body>
+</html>
